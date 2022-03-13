@@ -1,0 +1,53 @@
+{% extends 'main.html' %}
+{% block title %}
+<title>LOGIN</title>
+{% endblock title %}
+{% block body %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for category, message in messages %}
+    <div class="alert alert-{{category}} alert-dismissible fade show" role="alert">
+        <strong>Messagee:</strong> {{message}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+<title>Login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords"
+        content="login form for library " />
+     <link rel="stylesheet" href="../static/login.css" type="text/css" media="all" />
+   <section class="form-26">
+         <div class="form-26-mian">
+				<div class="layer">
+			<div class="wrapper">
+			<div class="form-inner-cont">
+					<div class="forms-26-info">
+						 <h2>Login</h2>
+                        <p>Welcome back, </p>
+                    </div>
+					<div class="form-right-inf"> 
+							<form action="#" method="post" class="signin-form">	
+							 <div class="forms-gds">
+								<div  class="form-input">
+									<input type="email" name="email" placeholder="Email" required />
+								</div>
+								<div  class="form-input">
+									<input type="password" name="password" placeholder="Password" required />
+								</div>
+								<div  class="form-input"><button class="btn">Login</button></div>
+							</div>
+						</form>
+						
+                    </div>
+                </div>
+			
+			</div>
+		</div>
+		    </div>
+		</section>
+	  {% endblock body %}
