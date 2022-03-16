@@ -6,7 +6,6 @@ To Run this Project user need to install the libraries of python flask <br/>
 Libraries to be installed <br/>
 ==> pip install flask <br/>
 ==> pip install flask_sqlalchemy (database was created by using the command db.create())<br/>
-      
 ==> pip install flask_login <br/>
 
 
